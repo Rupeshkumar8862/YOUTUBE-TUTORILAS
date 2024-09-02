@@ -1,0 +1,46 @@
+<?Php              
+
+ 
+echo "RUPESH TECH";
+echo "RUPESH TECH";
+echo "RUPESH TECH";
+echo "RUPESH TECH";
+
+
+
+
+
+
+
+
+/* What is a PHP loop? PHP loops are extremely useful for automating repetitive tasks, processing data or searching through lists and PHP arrays. You can execute a specific statement or code block repeatedly without needing to write it over and again. Use in PHP functions or PHP classes is also possible
+TYPES OF LOOP
+   1.While loop
+   2.Do While loop
+   3.for loop
+*/   
+@@@@@@@@@@@@@@@@@@@@@@@ work   @@@@@@@@@@@@@@
+loop(------ times???){
+    echo "RUPESH TECH";
+    Increment/decrement ++????;
+}
+
+                  While loop
+   1. Value Initialization
+   2. On Condition -> and true Statement
+   3.Increment/decrement 
+
+   2 4 6 8 10 12 16    20
+
+  
+
+
+                2 FOR LOOP
+                
+   for( value Initialization; Condition; Increment / Decrement){
+
+        Statement
+   }
+
+
+
