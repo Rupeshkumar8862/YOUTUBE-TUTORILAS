@@ -16,8 +16,7 @@ if(isset($_GET['del']) && @$_GET['del']!=''){
     header("location:index.php");
 
 
-    // tumne folder ke sath image upload krwaya tha matlab pura path iski wajsh se delete nhi ho rha tha 
-    // ha sir ok good nyt ;)
+    
 }
 
 

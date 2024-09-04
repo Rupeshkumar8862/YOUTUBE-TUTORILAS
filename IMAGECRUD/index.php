@@ -5,18 +5,9 @@ $conn=mysqli_connect("localhost","root","","test") or die("connection failed");
 if($conn){
     // echo 'connection succussful';
     }
-//delete
-// if($_GET['del']){
-//     $delsql="SELECT * FROM image WHERE test_id= '".$_GET['del']."'";
-//     $delsqlquery=mysqli_query($conn,$delsql) or die("query failed");
-//     // $rowimgedelete= mysqli_fetch_assoc($delsqlquery);
-//     // echo '<pre>'; print_r($rowimgedelete); echo '</pre>';  die();
-//     unlink("upload/".$rowimgedelete['test_image']);
-//     $sql= "DELETE FROM image WHERE test_id='".$_GET['del']."'";
-//     if($runsql= mysqli_multi_query($conn,$sql)){
-//         header("location:index.php");
-//         ?>
-<!-- // <meta HTTP-EQUIV="Refresh" content="2; URL=index.php"> -->
+
+       ?>
+
  <?php 
 //     }else { echo "Query failed"; } }
 // fetch 
@@ -115,8 +106,6 @@ if(isset($_POST['test_id'])){
 <?php 
       } }
 
-    //   else{ echo '<script> alert("All field are required")</script>';} 
-
       ?>
 
 
@@ -131,7 +120,6 @@ if(isset($_POST['test_id'])){
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
         crossorigin="anonymous">
-
 </head>
 
 <body>
@@ -192,7 +180,7 @@ echo '<table width="100%" border="1">
 $page=$_GET['page'];
 if(isset($_GET['page'])){$_GET['page'];}else{$_GET['page']=1;}
 
-$limit=10;
+$limit=3;
 // $offset=($page-1)*$limit;
 $offset=($_GET['page']-1)*$limit;
 //  echo $dissql="SELECT *FROM image {$WHERE} ORDER BY test_id DESC LIMIT {$offset},{$limit}";
@@ -203,7 +191,6 @@ $offset=($_GET['page']-1)*$limit;
     $abc=1;
     foreach ($rundis as $key => $value) {
        // echo '<pre>'; print_r($value); echo '</pre>';
-
         echo '<tr align:center style="font-weight:bolder;text-align:center;">
                  <td>'.$abc++.'</td>
                   <td align:center>'.$value['test_date'].'</td>
